@@ -12,7 +12,7 @@ app.get("/api/related/:sentence", (request, response) => {
 });
 
 app.get("/", (request, response) => {
-  response.sendFile("index.html");
+  response.sendFile(__dirname + "/index.html");
 });
 
 app.listen(8080, () => {
