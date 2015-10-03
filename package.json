@@ -1,0 +1,25 @@
+{
+  "name": "hackru-xi",
+  "version": "1.0.0",
+  "description": "RU READY",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimus0108/HackRU-XI.git"
+  },
+  "author": "Abhinav Madahar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimus0108/HackRU-XI/issues"
+  },
+  "homepage": "https://github.com/nimus0108/HackRU-XI#readme",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "express": "^4.13.3",
+    "mocha": "^2.3.3",
+    "stdio": "^0.2.7"
+  }
+}
