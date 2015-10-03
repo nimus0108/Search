@@ -11,6 +11,10 @@ app.get("/api/related/:sentence", (request, response) => {
   console.log(request.params.imageURL);
 });
 
+app.get("/", (request, response) => {
+  response.render("index.html");
+});
+
 app.listen(8080, () => {
   console.log("Server has started up");
 });
