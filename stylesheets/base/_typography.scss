@@ -1,3 +1,46 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-LightOblique.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Oblique.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Bold.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-BoldOblique.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+
 html {
   font-size: 62.5%;
   @media screen and (min-width: $bp-sm) { font-size: 65%; }
