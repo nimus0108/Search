@@ -2677,6 +2677,10 @@ body {
   transform-style: preserve-3d;
   font-weight: 400; }
 
+h1 {
+  margin: 0;
+  padding: 0; }
+
 #query {
   height: 100%;
   border: none;
@@ -2695,11 +2699,116 @@ form {
   font-size: 70px;
   position: relative;
   top: 50%;
+  color: #FFF;
   transform: translateY(-50%);
   border: none;
-  outline: 0; }
+  outline: 0;
+  background: none; }
 
 input:focus {
   outline: 0; }
+
+input {
+  background: transparent; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #FFF; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #FFF;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #FFF;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFF; }
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -999;
+  width: 100%;
+  min-height: 55.5555vw;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: #029bbf; }
+  .background .line {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .background .unit {
+    width: 33.3333vw;
+    height: 33.3333vw;
+    -ms-flex-preferred-size: 33.3333%;
+    -webkit-flex-basis: 33.3333%;
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    opacity: 0.05;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease; }
+    .background .unit:hover {
+      opacity: 1;
+      background-size: 105% 105% !important; }
+    @media screen and (min-width: 200px) {
+      .background .unit {
+        width: 25vw;
+        height: 25vw;
+        -ms-flex-preferred-size: 25%;
+        -webkit-flex-basis: 25%;
+        flex-basis: 25%;
+        max-width: 25%; } }
+    @media screen and (min-width: 400px) {
+      .background .unit {
+        width: 20vw;
+        height: 20vw;
+        -ms-flex-preferred-size: 20%;
+        -webkit-flex-basis: 20%;
+        flex-basis: 20%;
+        max-width: 20%; } }
+    @media screen and (min-width: 620px) {
+      .background .unit {
+        width: 16.6666vw;
+        height: 16.6666vw;
+        -ms-flex-preferred-size: 16.6666%;
+        -webkit-flex-basis: 16.6666%;
+        flex-basis: 16.6666%;
+        max-width: 16.6666%; } }
+    @media screen and (min-width: 850px) {
+      .background .unit {
+        width: 14.2857vw;
+        height: 14.2857vw;
+        -ms-flex-preferred-size: 14.2857%;
+        -webkit-flex-basis: 14.2857%;
+        flex-basis: 14.2857%;
+        max-width: 14.2857%; } }
 
 /*# sourceMappingURL=styles.css.map */
