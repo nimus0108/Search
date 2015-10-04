@@ -7,6 +7,11 @@ body {
     font-weight: 400;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 #query{
 	height: 100%;
 	border: none;
@@ -27,13 +32,34 @@ form {
     font-size: em(70px);
     position: relative;
     top: 50%;
+    color: #FFF;
     transform: translateY(-50%);
     border: none;
     outline: 0;
+    background: none;
 }
 
 input:focus{
     outline: 0;
+}
+
+input {
+    background: transparent;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #FFF;
 }
 
 // Search.html
