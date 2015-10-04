@@ -1,1 +1,165 @@
 // Write Code Here
+body {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    font-weight: 400;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#query{
+	height: 100%;
+	border: none;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 60pt;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+#search {
+    font-family: "Helvetica", "Arial", san-serif;
+    font-size: em(70px);
+    position: relative;
+    top: 50%;
+    color: #FFF;
+    transform: translateY(-50%);
+    border: none;
+    outline: 0;
+    background: none;
+}
+
+input:focus{
+    outline: 0;
+}
+
+input {
+    background: transparent;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #FFF;
+}
+
+// Search.html
+#results {
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 125px 0 0;
+}
+
+.project {
+	width: 20vw;
+	height: 20vw;
+	-ms-flex-preferred-size: 20%;
+	-webkit-flex-basis: 20%;
+	flex-basis: 20%;
+	max-width: 20%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	@include background(url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll);
+	
+	.container {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0 50px;
+		background-color: rgba(0, 0, 0, 0.85);
+		color: $color-white;
+		text-align: center;
+		opacity: 0;
+		
+		-webkit-transition: all 200ms ease;
+		-moz-transition: all 200ms ease;
+		-ms-transition: all 200ms ease;
+		-o-transition: all 200ms ease;
+		transition: all 200ms ease;
+
+		&:hover {
+			opacity: 1;
+		}
+		
+		.content {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		
+		.name {
+			font-size: em(36px);
+			font-weight: 400;
+			margin: 0 auto;
+			padding: 0;
+			line-height: 1;
+			color: $color-whiteA;
+		}
+		
+		h3 {
+			font-size: em(20px);
+			font-weight: 400;
+			margin: 5px auto;
+			padding: 0;
+			
+			i {
+				margin-right: 7px;
+			}
+			
+			.num-likes {
+				margin-right: 15px;
+			}
+		}
+		
+		.author { 
+			margin: 5px auto 15px;
+			color: $color-whiteD; 
+		}
+		.stats { color: $color-whiteB; }
+		
+		button {
+			width: 200px;
+			margin: 25px 0 0 0;
+			padding: 0;
+			border-radius: 50px;
+			background-color: $color-blue-button;
+			line-height: 50px;
+			font-weight: 400;
+			font-size: em(16px);
+		}
+	}
+}
