@@ -2691,13 +2691,15 @@ form {
   z-index: 1; }
 
 #search {
+  font-family: "Helvetica";
+  font-size: 70px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   border: none;
   outline: 0; }
 
-textarea:focus, input:focus {
+input:focus {
   outline: 0; }
 
 /*# sourceMappingURL=styles.css.map */
