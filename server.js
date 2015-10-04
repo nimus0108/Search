@@ -1,3 +1,5 @@
+require("babel/register");
+
 // use babel-node to run this file
 
 import express from "express";
@@ -27,6 +29,7 @@ mongoose.connection.on("open", () => {
   });
 
   app.get("/api/related/", (request, response) => {
+    console.log(request);
     const keywords = request.query.keywords.split(",").map((word) => word.trim());
     Image.find({}, (error, images) => {
       const isNotInArray = (array) => {
@@ -47,6 +50,14 @@ app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
 });
 
-app.listen(8080, () => {
+app.get('/stylesheets/styles.css', (request, response) => {
+	response.sendFile(__dirname + "/stylesheets/styles.css");
+});
+
+app.get('/index-pics/:n', (request, response) => {
+	response.sendFile(__dirname + "/index-pics/" + request.params.n);
+});
+
+app.listen(80, () => {
   logarithmic.ok("Server has started up");
 });
