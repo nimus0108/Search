@@ -1,13 +1,9 @@
 // Search.html
 .navbar {
-	position: fixed;
-	z-index: 999;
-	top: 0;
-	left: 0; right: 0;
 	width: 100%;
 	height: auto;
 	padding: 15px 5%;
-	background-color: $color-white;
+	background-color: #fdfdfd;
 	
 	input {
 		position: relative;
@@ -16,8 +12,8 @@
 		height: 66px !important;
 		margin: 0;
 		padding: 0 18px;
-		border: 1px solid $color-whiteC;
-		background-color: $color-white;
+		border: 1px solid #eee;
+		background-color: #fdfdfd;
 		font-size: em(22px);
 		line-height: 2;
 	}
@@ -50,7 +46,7 @@
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding: 50px 0 0;
+	padding: 0;
 }
 
 .project {
@@ -66,7 +62,6 @@
 	-webkit-flex: 0 0 auto;
 	-ms-flex: 0 0 auto;
 	flex: 0 0 auto;
-	@include background(url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll);
 	
 	.container {
 		width: 100%;

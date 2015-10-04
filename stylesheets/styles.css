@@ -451,7 +451,7 @@ a {
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #355d97; }
+    color: #355e98; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -485,7 +485,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #3864a1;
+    background-color: #3964a2;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
@@ -2812,11 +2812,6 @@ input {
         max-width: 14.2857%; } }
 
 .navbar {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   height: auto;
   padding: 15px 5%;
@@ -2828,7 +2823,7 @@ input {
     height: 66px !important;
     margin: 0;
     padding: 0 18px;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     background-color: #fdfdfd;
     font-size: 1.375em;
     line-height: 2; }
@@ -2857,7 +2852,7 @@ input {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 50px 0 0; }
+  padding: 0; }
 
 .project {
   width: 20vw;
@@ -2871,9 +2866,7 @@ input {
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  background: url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll;
-  background: url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll; }
+  flex: 0 0 auto; }
   .project .container {
     width: 100%;
     height: 100%;
