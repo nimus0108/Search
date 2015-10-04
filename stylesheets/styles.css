@@ -2733,24 +2733,29 @@ input {
   position: fixed;
   z-index: 999;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: auto;
   padding: 15px 5%;
   background-color: #fdfdfd; }
   .navbar input {
-    width: 450px;
-    height: 50px !important;
+    position: relative;
+    top: 4px;
+    width: 720px;
+    height: 66px !important;
     margin: 0;
     padding: 0 18px;
     border: 1px solid #ddd;
     background-color: #fdfdfd;
-    font-size: 1.125em;
+    font-size: 1.375em;
     line-height: 2; }
   .navbar button {
-    width: 50px;
-    height: auto;
+    width: 66px;
+    height: 66px !important;
     margin: 0;
-    padding: 0;
+    padding: 0 12px;
+    border: 1px solid #029bbf;
     background-color: #029bbf;
     color: #f7f7f7;
     font-size: 1.125em;
@@ -2791,7 +2796,7 @@ input {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0 50px;
+    padding: 10% 10% 0;
     background-color: rgba(0, 0, 0, 0.85);
     color: #fdfdfd;
     text-align: center;
