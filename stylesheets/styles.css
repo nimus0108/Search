@@ -2855,12 +2855,12 @@ input {
   padding: 0; }
 
 .project {
-  width: 20vw;
-  height: 20vw;
-  -ms-flex-preferred-size: 20%;
-  -webkit-flex-basis: 20%;
-  flex-basis: 20%;
-  max-width: 20%;
+  width: 25vw;
+  height: 25vw;
+  -ms-flex-preferred-size: 25%;
+  -webkit-flex-basis: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
