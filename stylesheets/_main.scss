@@ -23,6 +23,8 @@ form {
 }
 
 #search {
+    font-family: "Helvetica", "Arial", san-serif;
+    font-size: em(70px);
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -30,7 +32,7 @@ form {
     outline: 0;
 }
 
-textarea:focus, input:focus{
+input:focus{
     outline: 0;
 }
 
@@ -38,7 +40,7 @@ textarea:focus, input:focus{
 .project {
 	height: 350px;
 	@include span-columns(3);
-	@include background(url(https://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll);
+	@include background(url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll);
 	
 	.container {
 		width: 100%;

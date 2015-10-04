@@ -2727,13 +2727,15 @@ form {
   z-index: 1; }
 
 #search {
+  font-family: "Helvetica", "Arial", san-serif;
+  font-size: 4.375em;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   border: none;
   outline: 0; }
 
-textarea:focus, input:focus {
+input:focus {
   outline: 0; }
 
 .project {
