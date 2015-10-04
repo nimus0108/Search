@@ -5,6 +5,8 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import logarithmic from "logarithmic";
 import Image from "./models/image";
+import wordmap from "./lib/wordmap";
+import areSimilar from "./lib/aresimilar";
 
 mongoose.connect("localhost");
 
@@ -19,6 +21,11 @@ app.use(bodyParser());
 
 mongoose.connection.on("open", () => {
   logarithmic.ok("Connected to Mongoose correctly");
+
+  Image.find({}, (error, images) => {
+    logarithmic.alert(`There are ${images.length} images currently saved`);
+  });
+
   app.get("/api/related/", (request, response) => {
     const keywords = request.query.keywords.split(",").map((word) => word.trim());
     Image.find({}, (error, images) => {
