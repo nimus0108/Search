@@ -2671,6 +2671,42 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+@font-face {
+  font-family: "icon";
+  src: url("fonts/icon.eot");
+  src: url("fonts/icon.eot?#iefix") format("embedded-opentype"), url("fonts/icon.woff") format("woff"), url("fonts/icon.ttf") format("truetype"), url("fonts/icon.svg#icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-like:before {
+  content: "b"; }
+
+.icon-view:before {
+  content: "c"; }
+
 body {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -2695,8 +2731,8 @@ form {
   z-index: 1; }
 
 #search {
-  font-family: "Helvetica";
-  font-size: 70px;
+  font-family: "Helvetica", "Arial", san-serif;
+  font-size: 4.375em;
   position: relative;
   top: 50%;
   color: #FFF;
@@ -2728,6 +2764,32 @@ input {
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #FFF; }
+
+.project {
+  height: 350px;
+  float: left;
+  display: block;
+  margin-right: 1.87727%;
+  width: 18.49818%;
+  background: url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll;
+  background: url(http://m2.behance.net/rendition/pm/25685965/1400/b5943c7a7197186f8f18082150ae97b2.jpg) no-repeat center center scroll; }
+  .project:last-child {
+    margin-right: 0; }
+  .project .container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10% 0 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fdfdfd;
+    text-align: center;
+    opacity: 1; }
+    .project .container h1 {
+      font-size: 2.0625em;
+      font-weight: 400;
+      margin: 0 0 5px; }
+    .project .container h2 {
+      margin: 0; }
 
 .background {
   position: absolute;
