@@ -13,7 +13,8 @@ const imageSchema = new mongoose.Schema({
     appreciations: Number,
     comments: Number
   },
-  keywords: [String]
+  keywords: [String],
+  thumbnail: String
 });
 
 export default mongoose.model("Image", imageSchema);

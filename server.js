@@ -22,8 +22,8 @@ app.use(bodyParser());
 mongoose.connection.on("open", () => {
   logarithmic.ok("Connected to Mongoose correctly");
 
-  Image.find({}, (error, images) => {
-    logarithmic.alert(`There are ${images.length} images currently saved`);
+  Image.find({}, (err, images) => {
+    console.log(`There are ${images.length} images stored in the database`);
   });
 
   app.get("/api/related/", (request, response) => {
